@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "NicoNico Language Changer",
     "version": "1.0",
-    "description": "Change language from the player menu.",
+    "description": "Change language from the header.",
     "icons": {
         "48": "icons/icon48.png"
     },
@@ -12,8 +12,9 @@
                 "*://www.nicovideo.jp/watch/*"
             ],
             "js": [
-                "addmenuentry.js"
-            ]
+                "addheaderentry.js"
+            ],
+            "run_at": "document_idle"
         }
     ]
 }

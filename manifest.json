@@ -4,12 +4,13 @@
     "version": "1.0",
     "description": "Change language from the header.",
     "icons": {
-        "48": "icons/icon48.png"
+        "32": "icons/icon32.png",
+        "64": "icons/icon64.png"
     },
     "content_scripts": [
         {
             "matches": [
-                "*://www.nicovideo.jp/watch/*"
+                "*://*.nicovideo.jp/**"
             ],
             "js": [
                 "addheaderentry.js"
